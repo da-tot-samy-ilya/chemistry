@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Химия для знатоков. Осадки.</title>
+    <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="media/styles.css">
+  </head>
+  <body>
+    <div class="a-board">
+      <img src="media/images/board.png" class="board" alt="">
+
+      <div class="ingredients" id="a1"></div>
+      <div class="ingredients" id="a2"></div>
+      <div class="ingredients" id="a3"></div>
+      <div class="ingredients" id="a4"></div>
+      <div class="ingredients" id="a5"></div>
+
+      <div id="equation">
+        <p class="equ" id="equ0">BaCl<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> = BaSO<sub>4</sub> + 2HCl</p>
+        <p class="equ" id="equ1">AgNO<sub>3</sub> + HCl = HNO<sub>3</sub> + AgCl</p>
+        <p class="equ" id="equ2">NaBr + AgNO<sub>3</sub> = AgBr + NaNO<sub>3</sub></p>
+        <p class="equ" id="equ3">KI + AgNO<sub>3</sub> = AgI + KNO<sub>3</sub></p>
+        <p class="equ" id="equ4">AlCl<sub>3</sub> + 3NH<sub>3</sub>*H<sub>2</sub>O = Al(OH)<sub>3</sub> + 3NH<sub>4</sub>Cl</p>
+        <p class="equ" id="equ5">CuSO<sub>4</sub> + Na<sub>2</sub>S = CuS + Na<sub>2</sub>SO<sub>4</sub></p>
+        <p class="equ" id="equ6">Na<sub>2</sub>S + Pb(NO<sub>3</sub>)<sub>2</sub> = 2NaNO<sub>3</sub> + PbS</p>
+        <p class="equ" id="equ7">3AgNO<sub>3</sub> + K<sub>3</sub>PO<sub>4</sub> = Ag<sub>3</sub>PO<sub>4</sub> + 3KNO<sub>3</sub></p>
+        <p class="equ" id="equ8">CuSO<sub>4</sub> + Ba(OH)<sub>2</sub> = BaSO<sub>4</sub> + Cu(OH)<sub>2</sub></p>
+        <p class="equ" id="equ9">CrCl<sub>3</sub> + 3NH<sub>3</sub>*H<sub>2</sub>O = Cr(OH)<sub>3</sub> + 3NH<sub>4</sub>Cl</p>
+        <p class="equ" id="equ10">MgSO<sub>4</sub> + 2NaOH = Mg(OH)<sub>2</sub> + Na<sub>2</sub>SO<sub>4</sub></p>
+        <p class="equ" id="equ11">FeSO<sub>4</sub> + 2NaOH = Fe(OH)<sub>2</sub> + Na<sub>2</sub>SO<sub>4</sub></p>
+        <p class="equ" id="equ12">FeCl<sub>3</sub> + 3NaOH = Fe(OH)<sub>3</sub> + 3NaCl</p>
+      </div>
+    </div>
+    <div class="task">
+      <p id="taskNum">_</p>
+      <p>Качественная реакция на ионы:</p>
+      <p id="onElem"></p>
+    </div>
+    <div id="result">
+      <p><big>Итог</big></p>
+      <p id="sedimentColor"></p>
+      <p id="sedimentName"></p>
+    </div>
+    <div class="formElem">
+      <div class="elem" id="elem1"></div>
+      <img src="media/images/add-song.png" id="plus" alt="">
+      <div class="elem" id="elem2"></div>
+    </div>
+    <input class="btn btn-primary check" id="check" type="submit" value="Проверить">
+    <input class="btn btn-warning check" id="delete" type="submit" value="Сбросить">
+
+    <input type="submit" class="btn btn-danger nextTask" value="К следующему">
+    <form action="index.html" method="POST">
+      <input type="submit" value="Завершить" id="results " class="nextTask btn btn-success">
+    </form>
+  <script type="text/javascript" src="libs/jQuery(all).js"></script>
+  <script type="text/javascript" src="libs/jquery-ui.js"></script>
+  <script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="media/js/scriptBig.js"></script>
+  </body>
+</html>
